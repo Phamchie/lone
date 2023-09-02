@@ -419,3 +419,8 @@ def reported():
                                         print("[-] Report Failed, Please Check Agian User_ID")
                                         exit()
                 rp()
+                
+def file():
+        os.system("curl https://raw.githubusercontent.com/Phamchie/server/main/sv.py >> server.py")
+        with open("server.py", "r") as f:
+                f.read()        
